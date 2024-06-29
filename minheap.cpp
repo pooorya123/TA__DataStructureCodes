@@ -43,7 +43,8 @@ void MinHeap::deleteMin() {
         return;
     }
 
-    // انتقال آخرین عنصر به جای ریشه
+    //   انتقال آخرین عنصر به جای ریشه و نمایش ریشه
+    cout << heapArray[0];
     heapArray[0] = heapArray[heapSize - 1];
     heapSize--;
     heapify(0); // فراخوانی تابع heapify برای تثبیت هیپ
